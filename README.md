@@ -98,6 +98,9 @@ cv2.destroyAllWindows()
 ![or](grayhistogram.png)
 ![or](colorhistogram.png)
 
+### Equalized histogram of Grayscale Image
+![or](histogram.png)
+
 ### Histogram Equalization of Grayscale Image
 ![or](gray.png)
 ![or](equalized.png)

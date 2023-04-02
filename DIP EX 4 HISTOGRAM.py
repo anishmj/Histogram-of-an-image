@@ -43,7 +43,7 @@ plt.stem(color_hist)
 plt.show()
 
 
-# In[2]:
+# In[11]:
 
 
 import cv2
@@ -53,6 +53,32 @@ cv2.imshow('GRAY IMAGE',gray)
 cv2.imshow('EQUALIZED IMAGE',equ)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+
+# In[ ]:
+
+
+
+
+
+# In[12]:
+
+
+
+equal_hist = cv2.calcHist([equ],[0],None,[256],[0,255])
+equ = cv2.equalizeHist(gray)
+plt.figure()
+plt.title("EQUALIZATION")
+plt.xlabel('gray value')
+plt.ylabel('pixel count')
+plt.stem(equal_hist)
+plt.show()
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
